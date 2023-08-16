@@ -1,11 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
 
 body {
     font-family: 'Libre Baskerville', serif;
     margin: 0;
-    background-color: rgb(76, 75, 75);
+    background-color: rgb(18, 24, 32);
 
 }
 
@@ -33,10 +34,11 @@ h1 span {
 
 
 input[type=submit] {
-    background-color: #334850;
+    background-color: #AFAFAF;
+    color: #0F0F0F;
+    font: 'Ubuntu', serif;
     border: none;
     width: 100%;
-    color: white;
     font-weight: bold;
     padding: 1em 0;
     border-radius: 0.5em;
@@ -45,45 +47,77 @@ input[type=submit] {
     box-sizing: border-box;
 }
 .middle {
-    margin-top: 1em;
-    background: rgb(76, 75, 75) url('../images/cyanbg.jpg');
+    margin-top: 15em;
+    /*background: rgb(76, 75, 75) url('../images/cyanbg.jpg');*/
     background-size: 75em;
     text-align: center;
     color:white;
     padding: 0.5rem 0.5rem;
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Montserrat', serif;
     border-radius: 1rem;
-    
+    text-decoration: none;
 }
 .middle h2 {
-    text-decoration: underline;
+    text-decoration: none;
+    font-size: 25;
 }
 
 .bottom-half {
     text-align: center;
     padding-bottom: 10em;
     margin-top: 1em;
-    background-color: rgb(76, 75, 75);
+    background-color: rgb(18, 24, 32);
+    color:white;
     
 }
-.container {
+/*.container {
     background-color: rgb(111, 141, 135);
     border-radius: 1rem;
     padding: 0.75em 0.5em;
     box-shadow: 5px 5px 5px 5px;
 }
+*/
 .more-about {
     border-radius: 0.5rem;
     font-size: 1.5rem;
-    font-family: 'Unbounded', cursive;
+    font-family: 'Montserrat', serif;
     text-decoration: none;
     
 }
 
 input[type=submit]:hover {
-    background-color: #1c6782;
+    background-color: #C3C3C3;
     font-weight: lighter;
 }
+
+/* Apply styles to the img-gallery section */
+.img-gallery {
+    text-align: center;
+    padding: 20px;
+}
+
+/* Apply styles to the image container */
+.image-container {
+    margin-top: 10px;
+    
+}
+
+/* Apply styles to the images */
+.image-container img {
+    display: block;
+    margin: 10px auto;
+    max-width: 100%;
+    height: auto;
+    border-radius: 0.5rem;
+    margin-bottom: 3em;
+}
+.Highlights {
+    margin-top: 5em;
+}
+.about {
+    margin-bottom: 5em;
+}
+
 
 @media (min-width: 730px) {
     .top-half {
@@ -123,16 +157,80 @@ input[type=submit]:hover {
         text-align: left;
     }
     input[type='submit'] {
-        height: fit-content;
+        height: 8em; 
         font-size: 1.1rem;
-        padding: 0.7em 0;
+        padding: 0.5em 1.5em; 
         width: 85%;
+        background-size: 0;
+        background-repeat: no-repeat;
+        background-position: center center;
+        transition: background-size 0.5s ease-in-out;
     }
     .container {
-        text-align: center;
+        text-align: left;
     }
     .more-about {
         text-align: left;
+    }
+    .buttons {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .buttons .resume,
+    .buttons .Github,
+    .buttons .LinkedIn {
+        flex: 1;
+        margin: 0 5px;
+        position: relative;
+    }
+
+    /* Set background images for each button */
+    .buttons .resume input[type='submit'] {
+        background-image: url('../images/resume.png');
+        background-color: #AFAFAF;
+        color: #0F0F0F;
+        font: 'Ubuntu', serif;
+    }
+
+    .buttons .Github input[type='submit'] {
+        background-image: url('../images/github.png');
+        background-color: #AFAFAF;
+        color: #0F0F0F;
+        font: 'Ubuntu', serif;
+    }
+
+    .buttons .LinkedIn input[type='submit'] {
+        background-image: url('../images/linkedin.png');
+        background-color: #AFAFAF;
+        color: #0F0F0F;
+        font: 'Ubuntu', serif;
+    }
+
+    /* Apply the hover effect */
+    .buttons .resume input[type='submit']:hover,
+    .buttons .Github input[type='submit']:hover,
+    .buttons .LinkedIn input[type='submit']:hover {
+        background-size: 100%;
+        color: transparent;
+        background-color: rgb(211, 211, 211);
+    }
+    .img-gallery {
+        text-align: center;
+        padding: 20px;
+    }
+    
+    .image-container {
+        display: flex;
+        justify-content: center; 
+        align-items: center; 
+        margin-top: 10px;
+    }
+    
+    .image-container img {
+        max-width: 30%; 
+        height: auto; 
+        margin: 0 10px; 
     }
 }
 @media (min-width: 1300px) {
@@ -141,24 +239,34 @@ input[type=submit]:hover {
         padding: 10em 20em;
     }
     .middle {
-        background-size: 100em;
-        width:100%;
+        background-size: 80em;
         text-align: left;  
     }
     .bottom-half {
         text-align: left;
     }
     input[type='submit'] {
-        height: fit-content;
+        height: 8em; 
         font-size: 1.1rem;
-        padding: 0.7em 0;
-        width: 75%;
+        padding: 0.5em 1.5em; 
+        width: 85%;
     }
     .container {
-        text-align: center;
+        text-align: left;
     }
     .more-about {
         text-align: left;
+    }
+    .buttons {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .buttons .resume,
+    .buttons .Github,
+    .buttons .LinkedIn {
+        flex: 1;
+        margin: 0 5px;
     }
 }
 
@@ -170,6 +278,9 @@ input[type=submit]:hover {
 }
 .middle .Highlights{
     animation: SideIn 2s forwards;
+}
+.middle .img-gallery {
+    animation: fadeIn 2s forwards;
 }
 .bottom-half {
     animation: fadeIn 2s forwards;
@@ -186,7 +297,6 @@ input[type=submit]:hover {
 .bottom-half .buttons .LinkedIn{
     animation: SideIn 2s forwards;
 }
-
 
 @keyframes fadeIn {
     from {
