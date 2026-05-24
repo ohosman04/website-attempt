@@ -1,6 +1,6 @@
 function About() {
   return (
-    <section className="about">
+    <section id="about" className="about">
       <p>Quick Introduction</p>
       <h2> Fourth-year student at the University of Massachusetts Amherst, member of the Commonwealth Honors college, majoring in Computer Science.</h2>
 

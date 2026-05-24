@@ -4,7 +4,7 @@ import pic3 from '../assets/images/pic3.jpeg';
 
 function ImageGallery() {
   return (
-    <section className="img-gallery">
+    <section id="gallery" className="img-gallery">
       <div className="image-container">
         <img src={pic1} alt="Image 1" />
         <img src={pic2} alt="Image 2" />
