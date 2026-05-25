@@ -11,7 +11,7 @@ const accomplishments = [
 function Accomplishments() {
   return (
     <section className="Accomplishments">
-      <p>Accomplishments</p>
+      <h2 className="section-title">Achievements</h2>
       {accomplishments.map((item) => (
         <h2 key={item}>{item}</h2>
       ))}

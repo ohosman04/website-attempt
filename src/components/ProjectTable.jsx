@@ -2,6 +2,51 @@ import githubLogo from '../../images/GitHub_Invertocat_White.png';
 
 const projects = [
   {
+    year: 2026,
+    name: 'Probing the Grammar Machine',
+    description:
+      'A layer-wise mechanistic analysis of grammatical encoding in BERT.',
+    technologies: [
+      'Python',
+      'sci-kit learn',
+      'pandas',
+      'matplotlib',
+      'scipy',
+      'torch',
+    ],
+    link: 'https://github.com/llasic7558/590NN_Proj',
+  },
+  {
+    year: 2026,
+    name: 'U-Commerce',
+    description:
+      'E-Commerce website designed for and used by five-college students to sell student-made products and services.',
+    technologies: [
+      'NodeJS',
+      'ReactJS',
+      'ExpressJS',
+      'PostgreSQL',
+      'Supabase',
+      'Auth0',
+      'Jest',
+    ],
+    link: 'https://github.com/BakingPancakes/U-Commerce',
+  },
+  {
+    year: 2026,
+    name: 'My Honors Thesis',
+    description:
+      'Assessing the Predictive Accuracy of Machine Learning Models in NBA Draft Player Evaluation',
+    technologies: [
+      'Python',
+      'sci-kit learn',
+      'pandas',
+      'matplotlib',
+      'torch',
+    ],
+    link: 'https://github.com/ohosman04/CHC-ML-NBA-Draft-Predictor',
+  },
+  {
     year: 2025,
     name: 'Edibly',
     description:
@@ -33,7 +78,47 @@ const projects = [
     technologies: ['Python', 'Selenium Webdriver'],
     link: 'https://github.com/UnaryPlus/gradescope-submit',
   },
-];
+  {
+    year: 2023,
+    name: 'SwingShift',
+    description:
+      'Desktop application for efficient file format conversion, featuring an intuitive GUI built with Java Swing and integrated third-party libraries.',
+    technologies: [
+      'Java',
+      'Swing',
+      'Abstract Window Toolkit',
+      'ilovePDF API',
+      'Apache PDFBox',
+      'Apache POI XSLF',
+    ],
+    link: 'https://github.com/ohosman04/SwingShift',
+  },
+  {
+    year: 2023,
+    name: 'Space Scuffles',
+    description:
+      '2D platformer game featuring two distinct game modes and multiple control schemes to provide varied and user-friendly gameplay experiences.',
+    technologies: ['Python', 'Pygame'],
+    link: 'https://github.com/ohosman04/Space-Scuffles',
+  },
+  {
+    year: 2023,
+    name: 'UMunch',
+    description:
+      'Community-driven social platform for UMass students to check in, rate, and discuss dining hall experiences in real time.',
+    technologies: [
+      'Python',
+      'Flask',
+      'HTML',
+      'CSS',
+      'MongoDB',
+      'Auth0',
+      'Render',
+      'Git',
+    ],
+    link: 'https://github.com/UnaryPlus/hackumass2023',
+  },
+].sort((a, b) => b.year - a.year);
 
 function ProjectTable() {
   return (

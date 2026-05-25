@@ -57,6 +57,7 @@ function ImageGallery() {
 
   return (
     <section id="gallery" className="img-gallery">
+      <h2 className="section-title">Gallery</h2>
       <div className="gallery-carousel">
         <button
           type="button"
