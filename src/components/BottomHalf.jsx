@@ -5,8 +5,6 @@ function BottomHalf() {
   return (
     <motiondiv className="bottom-half">
       <div className="container">
-        <MoreAbout />
-        <SocialButtons />
       </div>
     </motiondiv>
   );

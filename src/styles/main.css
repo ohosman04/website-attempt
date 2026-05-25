@@ -26,6 +26,14 @@ body {
     border-bottom: 1px solid rgba(0, 90, 100, 0.08);
 }
 
+.navbar__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.85rem 1.5rem;
+    gap: 1.5rem;
+}
+
 .navbar__list {
     display: flex;
     justify-content: center;
@@ -33,7 +41,35 @@ body {
     gap: 2rem;
     list-style: none;
     margin: 0;
-    padding: 0.85rem 1.5rem;
+    padding: 0;
+    flex: 1;
+}
+
+.navbar__social {
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    flex-shrink: 0;
+}
+
+.navbar__social a {
+    display: flex;
+    align-items: center;
+    line-height: 0;
+}
+
+.navbar__social img {
+    height: 1.4rem;
+    width: auto;
+    opacity: 0.88;
+    transition: opacity 0.2s ease;
+}
+
+.navbar__social a:hover img {
+    opacity: 1;
 }
 
 .navbar__list a {
@@ -95,7 +131,7 @@ input[type=submit] {
     box-sizing: border-box;
 }
 .middle {
-    margin-top: 15em;
+    margin-top: 5em;
     /*background: rgb(76, 75, 75) url('../assets/images/cyanbg.jpg');*/
     background-size: 75em;
     text-align: center;
