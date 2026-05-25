@@ -41,13 +41,7 @@ function Navbar() {
             <a href="#gallery">Gallery</a>
           </li>
           <li>
-            <a
-              href="#"
-              className="navbar__link--inactive"
-              onClick={(e) => e.preventDefault()}
-            >
-              Projects
-            </a>
+            <a href="#projects">Projects</a>
           </li>
         </ul>
         <ul className="navbar__social">

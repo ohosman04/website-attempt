@@ -169,6 +169,107 @@ input[type=submit] {
     
 }
 
+.project-table {
+    margin-top: 3em;
+    font-family: 'Montserrat', sans-serif;
+    scroll-margin-top: 4rem;
+}
+
+.project-table__title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.75rem;
+    font-weight: 300;
+    letter-spacing: 0.06em;
+    margin: 0 0 1.25rem;
+    color: rgba(255, 255, 255, 0.95);
+}
+
+.project-table__wrapper {
+    overflow-x: auto;
+    border-radius: 0.5rem;
+    border: 1px solid rgba(0, 90, 100, 0.2);
+}
+
+.project-table table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.9rem;
+    text-align: left;
+}
+
+.project-table thead {
+    background-color: rgba(0, 55, 65, 0.35);
+}
+
+.project-table th,
+.project-table td {
+    padding: 0.85rem 1rem;
+    vertical-align: top;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.project-table th {
+    font-weight: 400;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    color: rgba(180, 230, 240, 0.9);
+}
+
+.project-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+.project-table tbody tr:hover {
+    background-color: rgba(0, 55, 65, 0.12);
+}
+
+.project-table__tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.project-table__tag {
+    display: inline-block;
+    padding: 0.2rem 0.55rem;
+    border-radius: 999px;
+    font-size: 0.75rem;
+    background-color: rgba(48, 125, 153, 0.35);
+    border: 1px solid rgba(48, 125, 153, 0.55);
+    color: rgba(220, 240, 245, 0.95);
+    white-space: nowrap;
+}
+
+.project-table__link-cell {
+    text-align: center;
+    vertical-align: middle;
+}
+
+.project-table__link-cell a,
+.project-table__link-placeholder {
+    display: inline-flex;
+    line-height: 0;
+}
+
+.project-table__link-cell img {
+    height: 1.35rem;
+    width: auto;
+    opacity: 0.88;
+    transition: opacity 0.2s ease;
+}
+
+.project-table__link-cell a:hover img {
+    opacity: 1;
+}
+
+.project-table__link-placeholder {
+    opacity: 0.35;
+}
+
 input[type=submit]:hover {
     background-color: #C3C3C3;
     font-weight: lighter;
