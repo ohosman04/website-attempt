@@ -1,6 +1,6 @@
-import pic1 from '../assets/images/pic1.jpeg';
-import pic2 from '../assets/images/pic2.jpeg';
-import pic3 from '../assets/images/pic3.jpeg';
+import pic1 from '../assets/images/gallery1.jpeg';
+import pic2 from '../assets/images/gallery2.jpeg';
+import pic3 from '../assets/images/gallery3.jpeg';
 
 function ImageGallery() {
   return (
