@@ -30,7 +30,7 @@ function Navbar() {
           </li>
           <li>
             <a
-              href="https://drive.google.com/file/d/1T2l_D0PmP3BAmaJtDP6R2w2yeld-DMMh/view?usp=sharing"
+              href="/website-attempt/resume.pdf"
               target="_blank"
               rel="noopener noreferrer"
             >

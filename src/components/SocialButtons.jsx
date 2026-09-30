@@ -3,7 +3,7 @@ import LinkButton from './LinkButton';
 const socialLinks = [
   {
     className: 'resume',
-    action: 'https://drive.google.com/file/d/1T2l_D0PmP3BAmaJtDP6R2w2yeld-DMMh/view?usp=sharing',
+    action: '/website-attempt/resume.pdf',
     value: 'Resume',
   },
   {

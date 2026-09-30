@@ -109,6 +109,37 @@ body {
     font-size: 3rem;
     font-weight: bold;
     margin: 0;
+    line-height: 1.2;
+}
+.top-half__typewriter {
+    display: inline-grid;
+    vertical-align: bottom;
+}
+.top-half__typewriter-reserve,
+.top-half__typewriter-line {
+    grid-area: 1 / 1;
+    white-space: pre;
+}
+.top-half__typewriter-reserve {
+    visibility: hidden;
+}
+.top-half__cursor {
+    display: inline-block;
+    margin-left: 0.08em;
+    color: #34D399;
+    animation: blink 1s step-end infinite;
+}
+
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .top-half__cursor {
+        animation: none;
+    }
 }
 .top-half__subtitle {
     margin: 1rem 0 0;
@@ -899,7 +930,21 @@ input[type=submit]:hover {
 }
 
 .top-half h1 {
-    animation: fadeIn 2s forwards;
+    animation: fadeIn 1.2s ease both;
+}
+.top-half__subtitle {
+    animation: fadeIn 1.2s ease 0.35s both;
+}
+.top-half__description {
+    animation: fadeIn 1.2s ease 0.65s both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .top-half h1,
+    .top-half__subtitle,
+    .top-half__description {
+        animation: none;
+    }
 }
 .middle .about{
     animation: SideIn 2s forwards;
