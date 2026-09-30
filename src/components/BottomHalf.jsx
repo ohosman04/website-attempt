@@ -1,5 +1,3 @@
-import MoreAbout from './MoreAbout';
-import SocialButtons from './SocialButtons';
 import ProjectTable from './ProjectTable';
 
 function BottomHalf() {
