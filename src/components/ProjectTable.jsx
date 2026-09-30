@@ -1,4 +1,5 @@
 import githubLogo from '../../images/GitHub_Invertocat_White.png';
+import SectionHeading from './SectionHeading';
 
 const projects = [
   {
@@ -147,8 +148,14 @@ function ProjectTable() {
     .slice(0, 3);
 
   return (
-    <section id="projects" className="project-table">
-      <h2 className="project-table__title">Featured Projects</h2>
+    <section
+      id="projects"
+      className="project-table section-panel section-panel--raised"
+    >
+      <SectionHeading
+        category="// 04. PROJECTS"
+        title="Featured Projects"
+      />
       <ul className="featured-projects">
         {featuredProjects.map((project) => (
           <li className="featured-project" key={project.name}>
@@ -189,9 +196,9 @@ function ProjectTable() {
         ))}
       </ul>
 
-      <h2 className="project-table__title project-table__title--all">
+      <h3 className="project-table__title project-table__title--all">
         All Projects
-      </h2>
+      </h3>
       <div className="project-table__wrapper">
         <table>
           <thead>

@@ -1,3 +1,5 @@
+import SectionHeading from './SectionHeading';
+
 const accomplishments = [
   {
     category: "Education",
@@ -44,10 +46,15 @@ const accomplishments = [
 
 function Accomplishments() {
   return (
-    <section className="Accomplishments" aria-labelledby="achievements-title">
-      <h2 className="section-title" id="achievements-title">
-        Achievements
-      </h2>
+    <section
+      className="Accomplishments section-panel section-panel--deep"
+      aria-labelledby="achievements-title"
+    >
+      <SectionHeading
+        category="// 03. ACHIEVEMENTS"
+        title="Achievements"
+        id="achievements-title"
+      />
       <ul className="achievements-grid">
         {accomplishments.map(({ accent, category, title }) => (
           <li

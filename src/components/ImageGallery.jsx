@@ -1,4 +1,5 @@
 import { useCallback, useEffect, useState } from 'react';
+import SectionHeading from './SectionHeading';
 
 const galleryModules = import.meta.glob('../../images/gallery*.{jpeg,jpg}', {
   eager: true,
@@ -56,8 +57,11 @@ function ImageGallery() {
   );
 
   return (
-    <section id="gallery" className="img-gallery">
-      <h2 className="section-title">Gallery</h2>
+    <section
+      id="gallery"
+      className="img-gallery section-panel section-panel--raised"
+    >
+      <SectionHeading category="// 02. GALLERY" title="Gallery" />
       <div className="gallery-carousel">
         <button
           type="button"
