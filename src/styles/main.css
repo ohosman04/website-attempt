@@ -101,19 +101,27 @@ body {
     background-size: 70em;
     color:white;
     text-align: center;
-    padding-bottom: 10em;
+    padding: 8em 1.5rem 10em;
 }
-h1 {
-    padding: 3em;
+.top-half h1 {
+    padding: 0;
     color: white;
-    font-size: 2rem;
+    font-size: 3rem;
     font-weight: bold;
-    margin: 0 1.2em;
+    margin: 0;
 }
-h1 span {
-    display: block;
-    font-size: 1.2rem;
+.top-half__subtitle {
+    margin: 1rem 0 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.25rem;
     font-style: italic;
+}
+.top-half__description {
+    max-width: 38rem;
+    margin: 1rem auto 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    line-height: 1.6;
 }
 
 
@@ -409,11 +417,11 @@ input[type=submit]:hover {
         padding-bottom: 10em;
         
     }
-    h1 {
+    .top-half h1 {
         font-size: 2.75rem;
     }
-    h1 span {
-        font-size: 2rem;
+    .top-half__subtitle {
+        font-size: 1.5rem;
     }
     section {
         margin: 0 4em;

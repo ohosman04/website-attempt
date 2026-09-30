@@ -3,6 +3,21 @@ import githubLogo from '../../images/GitHub_Invertocat_White.png';
 const projects = [
   {
     year: 2026,
+    name: 'Tutorin',
+    description:
+      'An offline oral-exam agent built on a Jetson Orin Nano, orchestrating speech-to-text, LLM grading, and text-to-speech feedback with 3 in-memory models and zero cloud dependencies.',
+    technologies: [
+      'Python',
+      'Faster-Whisper',
+      'Qwen2.5',
+      'Piper TTS',
+      'Ollama',
+      'Linux',
+    ],
+    link: 'https://github.com/ohosman04/tutorin', // Update with direct repo link if available
+  },
+  {
+    year: 2026,
     name: 'Probing the Grammar Machine',
     description:
       'A layer-wise mechanistic analysis of grammatical encoding in BERT.',
