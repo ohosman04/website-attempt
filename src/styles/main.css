@@ -299,6 +299,121 @@ input[type=submit]:hover {
     color: rgba(255, 255, 255, 0.95);
 }
 
+.Accomplishments {
+    margin-top: 5em;
+    text-align: left;
+}
+
+.achievements-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 1rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.achievement-card {
+    min-width: 0;
+    padding: 1.25rem;
+    border: 1px solid rgba(var(--achievement-accent-rgb), 0.2);
+    border-left: 3px solid rgba(var(--achievement-accent-rgb), 0.65);
+    border-radius: 0.75rem;
+    background: linear-gradient(145deg, rgba(28, 41, 52, 0.96), rgba(22, 32, 42, 0.96));
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.14);
+    transition: transform 180ms ease, border-color 180ms ease, box-shadow 180ms ease;
+}
+
+.achievement-card--education {
+    --achievement-accent: #8be1f2;
+    --achievement-accent-rgb: 88, 195, 222;
+}
+
+.achievement-card--scholarship {
+    --achievement-accent: #7fe3d2;
+    --achievement-accent-rgb: 63, 194, 174;
+}
+
+.achievement-card--academic {
+    --achievement-accent: #9ac7ff;
+    --achievement-accent-rgb: 93, 151, 230;
+}
+
+.achievement-card--competition {
+    --achievement-accent: #8fe9c0;
+    --achievement-accent-rgb: 73, 194, 139;
+}
+
+.achievement-card--teaching {
+    --achievement-accent: #a5dce9;
+    --achievement-accent-rgb: 105, 172, 194;
+}
+
+.achievement-card--leadership {
+    --achievement-accent: #a6d4ff;
+    --achievement-accent-rgb: 92, 153, 207;
+}
+
+.achievement-card:hover {
+    transform: translateY(-2px);
+    border-color: rgba(var(--achievement-accent-rgb), 0.6);
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.22);
+}
+
+.achievement-category {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    margin-bottom: 0.8rem;
+    padding: 0.3rem 0.65rem;
+    border: 1px solid rgba(var(--achievement-accent-rgb), 0.4);
+    border-radius: 999px;
+    background-color: rgba(var(--achievement-accent-rgb), 0.14);
+    color: var(--achievement-accent);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.72rem;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    line-height: 1.3;
+}
+
+.achievement-category svg {
+    width: 0.85rem;
+    height: 0.85rem;
+    flex: 0 0 auto;
+}
+
+.achievement-title {
+    margin: 0;
+    color: rgba(255, 255, 255, 0.96);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.6;
+    overflow-wrap: anywhere;
+}
+
+@media (min-width: 730px) {
+    .achievements-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 1.25rem;
+    }
+
+    .achievement-card {
+        padding: 1.5rem;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .achievement-card {
+        transition: none;
+    }
+
+    .achievement-card:hover {
+        transform: none;
+    }
+}
+
 .gallery-carousel {
     display: flex;
     align-items: center;
